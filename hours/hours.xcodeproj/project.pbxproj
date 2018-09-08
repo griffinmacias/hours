@@ -15,6 +15,10 @@
 		DB1285212143F52100B902DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB12851F2143F52100B902DF /* LaunchScreen.storyboard */; };
 		DB12852C2143F52100B902DF /* hoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12852B2143F52100B902DF /* hoursTests.swift */; };
 		DB1285372143F52100B902DF /* hoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285362143F52100B902DF /* hoursUITests.swift */; };
+		DB1285602143F8B900B902DF /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855C2143F8B900B902DF /* Entry+CoreDataClass.swift */; };
+		DB1285612143F8B900B902DF /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855D2143F8B900B902DF /* Entry+CoreDataProperties.swift */; };
+		DB1285622143F8B900B902DF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855E2143F8B900B902DF /* Activity+CoreDataClass.swift */; };
+		DB1285632143F8B900B902DF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855F2143F8B900B902DF /* Activity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		DB1285322143F52100B902DF /* hoursUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoursUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1285362143F52100B902DF /* hoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoursUITests.swift; sourceTree = "<group>"; };
 		DB1285382143F52100B902DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB12855C2143F8B900B902DF /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB12855D2143F8B900B902DF /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB12855E2143F8B900B902DF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB12855F2143F8B900B902DF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		DB1285122143F51F00B902DF /* hours */ = {
 			isa = PBXGroup;
 			children = (
+				DB1285642143F8CC00B902DF /* Core Data */,
 				DB1285132143F51F00B902DF /* AppDelegate.swift */,
 				DB1285152143F51F00B902DF /* ViewController.swift */,
 				DB1285172143F51F00B902DF /* Main.storyboard */,
@@ -126,6 +135,17 @@
 				DB1285382143F52100B902DF /* Info.plist */,
 			);
 			path = hoursUITests;
+			sourceTree = "<group>";
+		};
+		DB1285642143F8CC00B902DF /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DB12855C2143F8B900B902DF /* Entry+CoreDataClass.swift */,
+				DB12855D2143F8B900B902DF /* Entry+CoreDataProperties.swift */,
+				DB12855E2143F8B900B902DF /* Activity+CoreDataClass.swift */,
+				DB12855F2143F8B900B902DF /* Activity+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1285632143F8B900B902DF /* Activity+CoreDataProperties.swift in Sources */,
 				DB12851C2143F51F00B902DF /* hours.xcdatamodeld in Sources */,
 				DB1285162143F51F00B902DF /* ViewController.swift in Sources */,
+				DB1285602143F8B900B902DF /* Entry+CoreDataClass.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
+				DB1285622143F8B900B902DF /* Activity+CoreDataClass.swift in Sources */,
+				DB1285612143F8B900B902DF /* Entry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
