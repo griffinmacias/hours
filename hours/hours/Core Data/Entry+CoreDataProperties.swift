@@ -17,9 +17,9 @@ extension Entry {
         return NSFetchRequest<Entry>(entityName: "Entry")
     }
 
-    @NSManaged public var start: NSDate?
-    @NSManaged public var end: NSDate?
-    @NSManaged public var activityRelationship: NSSet?
+    @NSManaged public var start: NSDate
+    @NSManaged public var end: NSDate
+    @NSManaged public var activityRelationship: NSSet
 
 }
 
