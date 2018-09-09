@@ -22,6 +22,7 @@
 		DB1285612143F8B900B902DF /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855D2143F8B900B902DF /* Entry+CoreDataProperties.swift */; };
 		DB1285622143F8B900B902DF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855E2143F8B900B902DF /* Activity+CoreDataClass.swift */; };
 		DB1285632143F8B900B902DF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12855F2143F8B900B902DF /* Activity+CoreDataProperties.swift */; };
+		DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B7102145623D00EAE809 /* unitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DB12855D2143F8B900B902DF /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DB12855E2143F8B900B902DF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DB12855F2143F8B900B902DF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DBB4B7102145623D00EAE809 /* unitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DB12852B2143F52100B902DF /* hoursTests.swift */,
+				DBB4B7102145623D00EAE809 /* unitTests.swift */,
 				DB12852D2143F52100B902DF /* Info.plist */,
 			);
 			path = hoursTests;
@@ -415,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB12852C2143F52100B902DF /* hoursTests.swift in Sources */,
+				DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +587,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hours;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -599,7 +606,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hours;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -616,7 +626,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hoursTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hoursTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -634,7 +648,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hoursTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hoursTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -651,7 +669,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hoursUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hoursUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -668,7 +690,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hoursUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.masonmacias.hoursUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
