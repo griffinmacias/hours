@@ -13,15 +13,28 @@ import hours
 class ActivitySpec: QuickSpec {
     override func spec() {
         //TODO: need to figure out how to spec out this test
-        it("Able to calculate activities hours") {
-            //create Activity
-//            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-//                
-//            }
-            context("After being intialized as an Activity", {
-                //get into persistant store
-                //test for name 
-            })
-        }
+        
+        //init core data manager
+        
+        //persistant container init
+        
+        //save activity
+        
+        //delete activity
+        
+        //fetch activity
+        
+        //filter activity
+        
+        //save session
+        
+        //add session
+        
+        //delete session
+        
+        //fetch session
+        
+        //filter session
+        
     }
 }

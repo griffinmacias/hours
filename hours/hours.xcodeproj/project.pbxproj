@@ -14,6 +14,7 @@
 		DB100F8C2147EE24008018EF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */; };
 		DB100F8D2147EE24008018EF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */; };
 		DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */; };
+		DB100F902147F583008018EF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8F2147F583008018EF /* CoreDataManager.swift */; };
 		DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285132143F51F00B902DF /* AppDelegate.swift */; };
 		DB1285162143F51F00B902DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285152143F51F00B902DF /* ViewController.swift */; };
 		DB1285192143F51F00B902DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1285172143F51F00B902DF /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB100F8F2147F583008018EF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DB1285102143F51F00B902DF /* hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1285132143F51F00B902DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB1285152143F51F00B902DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */,
 				DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */,
 				DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */,
+				DB100F8F2147F583008018EF /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				DB12851C2143F51F00B902DF /* hours.xcdatamodeld in Sources */,
 				DB1285162143F51F00B902DF /* ViewController.swift in Sources */,
 				DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */,
+				DB100F902147F583008018EF /* CoreDataManager.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
