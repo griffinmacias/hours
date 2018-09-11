@@ -9,11 +9,14 @@
 import Foundation
 import Quick
 import Nimble
-
+import hours
 class ActivitySpec: QuickSpec {
     override func spec() {
         it("Activity does have a name value") {
             //create Activity
+//            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+//                
+//            }
             context("After being intialized as an Activity", {
                 //get into persistant store
                 //test for name 
