@@ -1,9 +1,8 @@
 //
 //  Entry+CoreDataProperties.swift
-//  hours
+//  
 //
-//  Created by Mason Macias on 9/8/18.
-//  Copyright © 2018 Mason Macias. All rights reserved.
+//  Created by Mason Macias on 9/10/18.
 //
 //
 
@@ -17,25 +16,25 @@ extension Entry {
         return NSFetchRequest<Entry>(entityName: "Entry")
     }
 
-    @NSManaged public var start: NSDate
     @NSManaged public var end: NSDate
-    @NSManaged public var activityRelationship: NSSet
+    @NSManaged public var start: NSDate
+    @NSManaged public var activities: NSSet
 
 }
 
-// MARK: Generated accessors for activityRelationship
+// MARK: Generated accessors for activities
 extension Entry {
 
-    @objc(addActivityRelationshipObject:)
-    @NSManaged public func addToActivityRelationship(_ value: Activity)
+    @objc(addActivitiesObject:)
+    @NSManaged public func addToActivities(_ value: Activity)
 
-    @objc(removeActivityRelationshipObject:)
-    @NSManaged public func removeFromActivityRelationship(_ value: Activity)
+    @objc(removeActivitiesObject:)
+    @NSManaged public func removeFromActivities(_ value: Activity)
 
-    @objc(addActivityRelationship:)
-    @NSManaged public func addToActivityRelationship(_ values: NSSet)
+    @objc(addActivities:)
+    @NSManaged public func addToActivities(_ values: NSSet)
 
-    @objc(removeActivityRelationship:)
-    @NSManaged public func removeFromActivityRelationship(_ values: NSSet)
+    @objc(removeActivities:)
+    @NSManaged public func removeFromActivities(_ values: NSSet)
 
 }

@@ -1,9 +1,8 @@
 //
 //  Activity+CoreDataProperties.swift
-//  hours
+//  
 //
-//  Created by Mason Macias on 9/8/18.
-//  Copyright © 2018 Mason Macias. All rights reserved.
+//  Created by Mason Macias on 9/10/18.
 //
 //
 
@@ -18,23 +17,23 @@ extension Activity {
     }
 
     @NSManaged public var name: String
-    @NSManaged public var entryRelationship: NSSet?
+    @NSManaged public var entries: NSSet?
 
 }
 
-// MARK: Generated accessors for entryRelationship
+// MARK: Generated accessors for entries
 extension Activity {
 
-    @objc(addEntryRelationshipObject:)
-    @NSManaged public func addToEntryRelationship(_ value: Entry)
+    @objc(addEntriesObject:)
+    @NSManaged public func addToEntries(_ value: Entry)
 
-    @objc(removeEntryRelationshipObject:)
-    @NSManaged public func removeFromEntryRelationship(_ value: Entry)
+    @objc(removeEntriesObject:)
+    @NSManaged public func removeFromEntries(_ value: Entry)
 
-    @objc(addEntryRelationship:)
-    @NSManaged public func addToEntryRelationship(_ values: NSSet)
+    @objc(addEntries:)
+    @NSManaged public func addToEntries(_ values: NSSet)
 
-    @objc(removeEntryRelationship:)
-    @NSManaged public func removeFromEntryRelationship(_ values: NSSet)
+    @objc(removeEntries:)
+    @NSManaged public func removeFromEntries(_ values: NSSet)
 
 }

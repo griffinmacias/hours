@@ -1,9 +1,8 @@
 //
 //  Entry+CoreDataClass.swift
-//  hours
+//  
 //
-//  Created by Mason Macias on 9/8/18.
-//  Copyright © 2018 Mason Macias. All rights reserved.
+//  Created by Mason Macias on 9/10/18.
 //
 //
 
