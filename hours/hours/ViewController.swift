@@ -21,21 +21,44 @@ class ViewController: UIViewController {
             let music = Activity(entity: Activity.entity(), insertInto: context)
             music.name = "Music"
             
+            //create entry
+            let session = Session(entity: Session.entity(), insertInto: context)
+            session.start = NSDate.init().addingTimeInterval(-1000)
+            session.end = NSDate.init()
+            
+            //add entry
+            music.addToSessions(session)
+            
+            
+            
             //drums
             let drums = Activity(entity: Activity.entity(), insertInto: context)
             drums.name = "Drums"
-            
-            
-            //create entry
-            let entry = Entry(entity: Entry.entity(), insertInto: context)
-            entry.start = NSDate.init().addingTimeInterval(-1000)
-            entry.end = NSDate.init()
+            drums.addToRelatedActivities(music)
             
             //another entry
+            let session2 = Session(entity: Session.entity(), insertInto: context)
+            session.start = NSDate.init().addingTimeInterval(-2000)
+            session.end = NSDate.init().addingTimeInterval(-100)
+            drums.addToSessions(session2)
             
             
-            //add entry
-            music.addToEntries(entry)
+            //now i need to calculate the amount of sessions length there are for music
+            
+            //get music's current value
+            if let musicSessions = music.sessions {
+                var valueOfTime: TimeInterval = 0.0
+                for session in musicSessions {
+                    guard let startDate = (session as AnyObject).start, let endDate = (session as AnyObject).end else { return }
+                    valueOfTime += endDate.timeIntervalSince(startDate as Date)
+                }
+            }
+            
+            //look for activities that have music as a related activity
+            
+            //grab its sessions and add it to the valueOfTime
+            
+            //needs to recursively call to figure out all the subtrees 
         }
     }
     

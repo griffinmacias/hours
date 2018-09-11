@@ -1,8 +1,8 @@
 //
-//  Entry+CoreDataProperties.swift
+//  Session+CoreDataProperties.swift
 //  
 //
-//  Created by Mason Macias on 9/10/18.
+//  Created by Mason Macias on 9/11/18.
 //
 //
 
@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension Entry {
+extension Session {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Entry> {
-        return NSFetchRequest<Entry>(entityName: "Entry")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Session> {
+        return NSFetchRequest<Session>(entityName: "Session")
     }
 
     @NSManaged public var end: NSDate
@@ -23,7 +23,7 @@ extension Entry {
 }
 
 // MARK: Generated accessors for activities
-extension Entry {
+extension Session {
 
     @objc(addActivitiesObject:)
     @NSManaged public func addToActivities(_ value: Activity)

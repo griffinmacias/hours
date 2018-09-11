@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.swift
 //  
 //
-//  Created by Mason Macias on 9/10/18.
+//  Created by Mason Macias on 9/11/18.
 //
 //
 
@@ -17,23 +17,41 @@ extension Activity {
     }
 
     @NSManaged public var name: String
-    @NSManaged public var entries: NSSet?
+    @NSManaged public var sessions: NSSet?
+    @NSManaged public var relatedActivities: NSSet?
 
 }
 
-// MARK: Generated accessors for entries
+// MARK: Generated accessors for sessions
 extension Activity {
 
-    @objc(addEntriesObject:)
-    @NSManaged public func addToEntries(_ value: Entry)
+    @objc(addSessionsObject:)
+    @NSManaged public func addToSessions(_ value: Session)
 
-    @objc(removeEntriesObject:)
-    @NSManaged public func removeFromEntries(_ value: Entry)
+    @objc(removeSessionsObject:)
+    @NSManaged public func removeFromSessions(_ value: Session)
 
-    @objc(addEntries:)
-    @NSManaged public func addToEntries(_ values: NSSet)
+    @objc(addSessions:)
+    @NSManaged public func addToSessions(_ values: NSSet)
 
-    @objc(removeEntries:)
-    @NSManaged public func removeFromEntries(_ values: NSSet)
+    @objc(removeSessions:)
+    @NSManaged public func removeFromSessions(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for relatedActivities
+extension Activity {
+
+    @objc(addRelatedActivitiesObject:)
+    @NSManaged public func addToRelatedActivities(_ value: Activity)
+
+    @objc(removeRelatedActivitiesObject:)
+    @NSManaged public func removeFromRelatedActivities(_ value: Activity)
+
+    @objc(addRelatedActivities:)
+    @NSManaged public func addToRelatedActivities(_ values: NSSet)
+
+    @objc(removeRelatedActivities:)
+    @NSManaged public func removeFromRelatedActivities(_ values: NSSet)
 
 }

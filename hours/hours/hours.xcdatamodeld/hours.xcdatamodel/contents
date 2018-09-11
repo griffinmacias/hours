@@ -2,15 +2,16 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Activity" representedClassName="Activity" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="entries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entry" inverseName="activities" inverseEntity="Entry" syncable="YES"/>
+        <relationship name="relatedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="relatedActivities" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="activities" inverseEntity="Session" syncable="YES"/>
     </entity>
-    <entity name="Entry" representedClassName="Entry" syncable="YES">
+    <entity name="Session" representedClassName="Session" syncable="YES">
         <attribute name="end" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="start" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <relationship name="activities" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="entries" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="activities" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="sessions" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="Entry" positionX="-54" positionY="0" width="128" height="90"/>
+        <element name="Activity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Session" positionX="-54" positionY="0" width="128" height="90"/>
     </elements>
 </model>

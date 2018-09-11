@@ -10,10 +10,10 @@
 		0F9F4A2B8FBF30E6C7BE2AB7 /* Pods_hoursTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFA0136DA29AA9019D1C6AA /* Pods_hoursTests.framework */; };
 		8BAE71344E44EC19E0E20BA6 /* Pods_hours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7602295D716F3169DFB16CE2 /* Pods_hours.framework */; };
 		CD10745369FA3A59AD0D3D3E /* Pods_hoursUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00266C0753B31CE5A5CEC0EE /* Pods_hoursUITests.framework */; };
-		DB100F8221473DBA008018EF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F7E21473DBA008018EF /* Activity+CoreDataProperties.swift */; };
-		DB100F8321473DBA008018EF /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F7F21473DBA008018EF /* Entry+CoreDataProperties.swift */; };
-		DB100F8421473DBA008018EF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8021473DBA008018EF /* Activity+CoreDataClass.swift */; };
-		DB100F8521473DBA008018EF /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8121473DBA008018EF /* Entry+CoreDataClass.swift */; };
+		DB100F8B2147EE24008018EF /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */; };
+		DB100F8C2147EE24008018EF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */; };
+		DB100F8D2147EE24008018EF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */; };
+		DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */; };
 		DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285132143F51F00B902DF /* AppDelegate.swift */; };
 		DB1285162143F51F00B902DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285152143F51F00B902DF /* ViewController.swift */; };
 		DB1285192143F51F00B902DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1285172143F51F00B902DF /* Main.storyboard */; };
@@ -52,10 +52,10 @@
 		7602295D716F3169DFB16CE2 /* Pods_hours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61F970B595F41BE742A8A10 /* Pods-hoursUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoursUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hoursUITests/Pods-hoursUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C17236E1A43C4F3ABEA78F42 /* Pods-hoursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoursTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hoursTests/Pods-hoursTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB100F7E21473DBA008018EF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DB100F7F21473DBA008018EF /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DB100F8021473DBA008018EF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DB100F8121473DBA008018EF /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DB1285102143F51F00B902DF /* hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1285132143F51F00B902DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB1285152143F51F00B902DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,10 +170,10 @@
 		DB1285642143F8CC00B902DF /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				DB100F8021473DBA008018EF /* Activity+CoreDataClass.swift */,
-				DB100F7E21473DBA008018EF /* Activity+CoreDataProperties.swift */,
-				DB100F8121473DBA008018EF /* Entry+CoreDataClass.swift */,
-				DB100F7F21473DBA008018EF /* Entry+CoreDataProperties.swift */,
+				DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */,
+				DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */,
+				DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */,
+				DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -403,13 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB100F8221473DBA008018EF /* Activity+CoreDataProperties.swift in Sources */,
+				DB100F8B2147EE24008018EF /* Session+CoreDataProperties.swift in Sources */,
+				DB100F8C2147EE24008018EF /* Activity+CoreDataClass.swift in Sources */,
+				DB100F8D2147EE24008018EF /* Activity+CoreDataProperties.swift in Sources */,
 				DB12851C2143F51F00B902DF /* hours.xcdatamodeld in Sources */,
-				DB100F8521473DBA008018EF /* Entry+CoreDataClass.swift in Sources */,
 				DB1285162143F51F00B902DF /* ViewController.swift in Sources */,
+				DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
-				DB100F8421473DBA008018EF /* Activity+CoreDataClass.swift in Sources */,
-				DB100F8321473DBA008018EF /* Entry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

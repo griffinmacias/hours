@@ -12,7 +12,8 @@ import Nimble
 import hours
 class ActivitySpec: QuickSpec {
     override func spec() {
-        it("Activity does have a name value") {
+        //TODO: need to figure out how to spec out this test
+        it("Able to calculate activities hours") {
             //create Activity
 //            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
 //                
