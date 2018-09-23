@@ -10,10 +10,6 @@
 		0F9F4A2B8FBF30E6C7BE2AB7 /* Pods_hoursTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFA0136DA29AA9019D1C6AA /* Pods_hoursTests.framework */; };
 		8BAE71344E44EC19E0E20BA6 /* Pods_hours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7602295D716F3169DFB16CE2 /* Pods_hours.framework */; };
 		CD10745369FA3A59AD0D3D3E /* Pods_hoursUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00266C0753B31CE5A5CEC0EE /* Pods_hoursUITests.framework */; };
-		DB100F8B2147EE24008018EF /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */; };
-		DB100F8C2147EE24008018EF /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */; };
-		DB100F8D2147EE24008018EF /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */; };
-		DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */; };
 		DB100F902147F583008018EF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB100F8F2147F583008018EF /* CoreDataManager.swift */; };
 		DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285132143F51F00B902DF /* AppDelegate.swift */; };
 		DB1285162143F51F00B902DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285152143F51F00B902DF /* ViewController.swift */; };
@@ -24,6 +20,10 @@
 		DB12852C2143F52100B902DF /* hoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12852B2143F52100B902DF /* hoursTests.swift */; };
 		DB1285372143F52100B902DF /* hoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285362143F52100B902DF /* hoursUITests.swift */; };
 		DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */; };
+		DB2EA97E2157B94900A16AF1 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */; };
+		DB2EA97F2157B94900A16AF1 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */; };
+		DB2EA9802157B94900A16AF1 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */; };
+		DB2EA9812157B94900A16AF1 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */; };
 		DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B7102145623D00EAE809 /* unitTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +54,6 @@
 		7602295D716F3169DFB16CE2 /* Pods_hours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61F970B595F41BE742A8A10 /* Pods-hoursUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoursUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hoursUITests/Pods-hoursUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C17236E1A43C4F3ABEA78F42 /* Pods-hoursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoursTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hoursTests/Pods-hoursTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DB100F8F2147F583008018EF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DB1285102143F51F00B902DF /* hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1285132143F51F00B902DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +70,10 @@
 		DB1285362143F52100B902DF /* hoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoursUITests.swift; sourceTree = "<group>"; };
 		DB1285382143F52100B902DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Activity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Session+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Activity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Session+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		DBB4B7102145623D00EAE809 /* unitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +140,10 @@
 		DB1285122143F51F00B902DF /* hours */ = {
 			isa = PBXGroup;
 			children = (
+				DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */,
+				DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */,
+				DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */,
+				DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */,
 				DB1285642143F8CC00B902DF /* Core Data */,
 				DB1285132143F51F00B902DF /* AppDelegate.swift */,
 				DB1285152143F51F00B902DF /* ViewController.swift */,
@@ -175,10 +179,6 @@
 		DB1285642143F8CC00B902DF /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				DB100F8A2147EE24008018EF /* Session+CoreDataClass.swift */,
-				DB100F872147EE23008018EF /* Session+CoreDataProperties.swift */,
-				DB100F882147EE24008018EF /* Activity+CoreDataClass.swift */,
-				DB100F892147EE24008018EF /* Activity+CoreDataProperties.swift */,
 				DB100F8F2147F583008018EF /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
@@ -409,15 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB100F8B2147EE24008018EF /* Session+CoreDataProperties.swift in Sources */,
-				DB100F8C2147EE24008018EF /* Activity+CoreDataClass.swift in Sources */,
-				DB100F8D2147EE24008018EF /* Activity+CoreDataProperties.swift in Sources */,
 				DB12851C2143F51F00B902DF /* hours.xcdatamodeld in Sources */,
 				DB1285162143F51F00B902DF /* ViewController.swift in Sources */,
-				DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */,
+				DB2EA9812157B94900A16AF1 /* Session+CoreDataClass.swift in Sources */,
 				DB100F902147F583008018EF /* CoreDataManager.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
+				DB2EA9802157B94900A16AF1 /* Activity+CoreDataProperties.swift in Sources */,
+				DB2EA97E2157B94900A16AF1 /* Activity+CoreDataClass.swift in Sources */,
 				DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */,
+				DB2EA97F2157B94900A16AF1 /* Session+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,14 +35,32 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAY-4y-pUk">
+                                                    <rect key="frame" x="319" y="27.5" width="41" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0o-Wu-0th">
+                                                    <rect key="frame" x="65" y="36" width="37" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="EAY-4y-pUk" secondAttribute="trailing" constant="15" id="0uq-N7-0wP"/>
+                                                <constraint firstItem="L0o-Wu-0th" firstAttribute="top" secondItem="6Z0-I8-oon" secondAttribute="bottom" constant="-8" id="9Qb-xV-dnS"/>
+                                                <constraint firstItem="EAY-4y-pUk" firstAttribute="centerY" secondItem="czS-sR-uQT" secondAttribute="centerY" id="ThM-E3-IM9"/>
                                                 <constraint firstItem="6Z0-I8-oon" firstAttribute="centerY" secondItem="czS-sR-uQT" secondAttribute="centerY" id="h7X-UZ-SOx"/>
                                                 <constraint firstItem="6Z0-I8-oon" firstAttribute="leading" secondItem="czS-sR-uQT" secondAttribute="leading" constant="15" id="oGi-7c-Ugv"/>
+                                                <constraint firstItem="L0o-Wu-0th" firstAttribute="leading" secondItem="6Z0-I8-oon" secondAttribute="trailing" constant="8" id="vVo-qG-qZD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="6Z0-I8-oon" id="k0v-SU-0sg"/>
+                                            <outlet property="sessionLabel" destination="EAY-4y-pUk" id="UoO-FQ-Ym7"/>
+                                            <outlet property="tagLabel" destination="L0o-Wu-0th" id="AgT-2Y-ALO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

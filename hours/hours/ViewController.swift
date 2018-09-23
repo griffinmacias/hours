@@ -15,13 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var activitiesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 //        createActivities()
         getActivities()
         activitiesTableView.reloadData()
     }
     
     func createActivities() {
+        
         let context = CoreDataManager.shared.persistentContainer.viewContext
         
         //music
@@ -33,19 +33,21 @@ class ViewController: UIViewController {
         musicSession.start = NSDate.init().addingTimeInterval(-1000)
         musicSession.end = NSDate.init()
         
-//        //add entry
-//        music.addToSessions(musicSession)
-//
+        //add entry
+        music.addToSessions(musicSession)
+
         //drums
         let drums = Activity(entity: Activity.entity(), insertInto: context)
         drums.name = "Drums"
         drums.addToRelatedActivities(music)
         
-//        //another entry
-//        let drumSession = Session(entity: Session.entity(), insertInto: context)
-//        musicSession.start = NSDate.init().addingTimeInterval(-2000)
-//        musicSession.end = NSDate.init().addingTimeInterval(-100)
-//        drums.addToSessions(drumSession)
+        //another entry
+        let drumSession = Session(entity: Session.entity(), insertInto: context)
+        drumSession.start = NSDate.init().addingTimeInterval(-2000)
+        drumSession.end = NSDate.init().addingTimeInterval(-100)
+        drums.addToSessions(drumSession)
+        
+        m
         
         CoreDataManager.shared.saveContext()
     }
@@ -76,6 +78,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ActivityTableViewCell.self), for: indexPath) as! ActivityTableViewCell
         let activity = activities[indexPath.row]
         cell.nameLabel.text = activity.name
+        if let session = activity.sessions?.firstObject as? Session {
+            cell.sessionLabel.text = "\(session.start) - \(session.end)"
+        }
+        if let relatedActivity = activity.relatedActivities?.firstObject as? Activity {
+            cell.tagLabel.text = relatedActivity.name
+        }
         return cell
     }
     
