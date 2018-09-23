@@ -23,6 +23,7 @@
 		DB1285212143F52100B902DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB12851F2143F52100B902DF /* LaunchScreen.storyboard */; };
 		DB12852C2143F52100B902DF /* hoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12852B2143F52100B902DF /* hoursTests.swift */; };
 		DB1285372143F52100B902DF /* hoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285362143F52100B902DF /* hoursUITests.swift */; };
+		DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */; };
 		DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B7102145623D00EAE809 /* unitTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		DB1285322143F52100B902DF /* hoursUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoursUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1285362143F52100B902DF /* hoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoursUITests.swift; sourceTree = "<group>"; };
 		DB1285382143F52100B902DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		DBB4B7102145623D00EAE809 /* unitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				DB1285642143F8CC00B902DF /* Core Data */,
 				DB1285132143F51F00B902DF /* AppDelegate.swift */,
 				DB1285152143F51F00B902DF /* ViewController.swift */,
+				DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */,
 				DB1285172143F51F00B902DF /* Main.storyboard */,
 				DB12851D2143F52100B902DF /* Assets.xcassets */,
 				DB12851F2143F52100B902DF /* LaunchScreen.storyboard */,
@@ -414,6 +417,7 @@
 				DB100F8E2147EE24008018EF /* Session+CoreDataClass.swift in Sources */,
 				DB100F902147F583008018EF /* CoreDataManager.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
+				DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hours/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -609,7 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = JA52596255;
 				INFOPLIST_FILE = hours/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
