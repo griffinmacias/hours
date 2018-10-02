@@ -16,7 +16,7 @@ extension Activity {
         return NSFetchRequest<Activity>(entityName: "Activity")
     }
 
-    @NSManaged public var name: String?
+    @NSManaged public var name: String
     @NSManaged public var relatedActivities: NSOrderedSet?
     @NSManaged public var sessions: NSOrderedSet?
 

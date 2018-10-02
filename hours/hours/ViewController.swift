@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var activitiesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        createActivities()
+        createActivities()
         getActivities()
         activitiesTableView.reloadData()
     }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         drumSession.end = NSDate.init().addingTimeInterval(-100)
         drums.addToSessions(drumSession)
         
-        m
+        
         
         CoreDataManager.shared.saveContext()
     }
@@ -83,6 +83,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         if let relatedActivity = activity.relatedActivities?.firstObject as? Activity {
             cell.tagLabel.text = relatedActivity.name
+        } else {
+            cell.tagLabel.text = ""
         }
         return cell
     }

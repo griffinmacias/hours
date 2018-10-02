@@ -20,11 +20,11 @@
 		DB12852C2143F52100B902DF /* hoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12852B2143F52100B902DF /* hoursTests.swift */; };
 		DB1285372143F52100B902DF /* hoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285362143F52100B902DF /* hoursUITests.swift */; };
 		DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */; };
-		DB2EA97E2157B94900A16AF1 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */; };
-		DB2EA97F2157B94900A16AF1 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */; };
-		DB2EA9802157B94900A16AF1 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */; };
-		DB2EA9812157B94900A16AF1 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */; };
 		DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B7102145623D00EAE809 /* unitTests.swift */; };
+		DBEFD4582164220B00F00038 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4542164220B00F00038 /* Session+CoreDataClass.swift */; };
+		DBEFD4592164220B00F00038 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4552164220B00F00038 /* Session+CoreDataProperties.swift */; };
+		DBEFD45A2164220B00F00038 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4562164220B00F00038 /* Activity+CoreDataClass.swift */; };
+		DBEFD45B2164220B00F00038 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4572164220B00F00038 /* Activity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +70,11 @@
 		DB1285362143F52100B902DF /* hoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoursUITests.swift; sourceTree = "<group>"; };
 		DB1285382143F52100B902DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
-		DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Activity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Session+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Activity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Session+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		DBB4B7102145623D00EAE809 /* unitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTests.swift; sourceTree = "<group>"; };
+		DBEFD4542164220B00F00038 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Session+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		DBEFD4552164220B00F00038 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Session+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		DBEFD4562164220B00F00038 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Activity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		DBEFD4572164220B00F00038 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Activity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +140,6 @@
 		DB1285122143F51F00B902DF /* hours */ = {
 			isa = PBXGroup;
 			children = (
-				DB2EA97A2157B94900A16AF1 /* Activity+CoreDataClass.swift */,
-				DB2EA97C2157B94900A16AF1 /* Activity+CoreDataProperties.swift */,
-				DB2EA97D2157B94900A16AF1 /* Session+CoreDataClass.swift */,
-				DB2EA97B2157B94900A16AF1 /* Session+CoreDataProperties.swift */,
 				DB1285642143F8CC00B902DF /* Core Data */,
 				DB1285132143F51F00B902DF /* AppDelegate.swift */,
 				DB1285152143F51F00B902DF /* ViewController.swift */,
@@ -179,6 +175,10 @@
 		DB1285642143F8CC00B902DF /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				DBEFD4542164220B00F00038 /* Session+CoreDataClass.swift */,
+				DBEFD4552164220B00F00038 /* Session+CoreDataProperties.swift */,
+				DBEFD4562164220B00F00038 /* Activity+CoreDataClass.swift */,
+				DBEFD4572164220B00F00038 /* Activity+CoreDataProperties.swift */,
 				DB100F8F2147F583008018EF /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
@@ -409,15 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEFD45A2164220B00F00038 /* Activity+CoreDataClass.swift in Sources */,
 				DB12851C2143F51F00B902DF /* hours.xcdatamodeld in Sources */,
 				DB1285162143F51F00B902DF /* ViewController.swift in Sources */,
-				DB2EA9812157B94900A16AF1 /* Session+CoreDataClass.swift in Sources */,
+				DBEFD4582164220B00F00038 /* Session+CoreDataClass.swift in Sources */,
 				DB100F902147F583008018EF /* CoreDataManager.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
-				DB2EA9802157B94900A16AF1 /* Activity+CoreDataProperties.swift in Sources */,
-				DB2EA97E2157B94900A16AF1 /* Activity+CoreDataClass.swift in Sources */,
 				DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */,
-				DB2EA97F2157B94900A16AF1 /* Session+CoreDataProperties.swift in Sources */,
+				DBEFD4592164220B00F00038 /* Session+CoreDataProperties.swift in Sources */,
+				DBEFD45B2164220B00F00038 /* Activity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

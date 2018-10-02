@@ -2,7 +2,7 @@
 //  Session+CoreDataProperties.swift
 //  
 //
-//  Created by Mason Macias on 9/23/18.
+//  Created by Mason Macias on 10/2/18.
 //
 //
 
@@ -16,9 +16,9 @@ extension Session {
         return NSFetchRequest<Session>(entityName: "Session")
     }
 
-    @NSManaged public var end: NSDate
-    @NSManaged public var start: NSDate
-    @NSManaged public var activities: NSSet
+    @NSManaged public var end: NSDate?
+    @NSManaged public var start: NSDate?
+    @NSManaged public var activities: NSSet?
 
 }
 
