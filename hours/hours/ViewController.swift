@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var activitiesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        createActivities()
+//        createActivities()
         getActivities()
         activitiesTableView.reloadData()
     }
@@ -78,14 +78,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ActivityTableViewCell.self), for: indexPath) as! ActivityTableViewCell
         let activity = activities[indexPath.row]
         cell.nameLabel.text = activity.name
+        var value = 0.0
         if let session = activity.sessions?.firstObject as? Session {
-            cell.sessionLabel.text = "\(session.start) - \(session.end)"
+            value += session.end.timeIntervalSince(session.start as Date)
+//            cell.sessionLabel.text = "\(session.start) - \(session.end)"
         }
-        if let relatedActivity = activity.relatedActivities?.firstObject as? Activity {
-            cell.tagLabel.text = relatedActivity.name
-        } else {
-            cell.tagLabel.text = ""
+        var tags = ""
+        if let relatedActivities = activity.relatedActivities {
+            for relatedActivity in relatedActivities {
+                guard let relatedActivity = relatedActivity as? Activity else { continue }
+                tags += (" " + relatedActivity.name)
+                if let session = activity.sessions?.firstObject as? Session {
+                    value += session.end.timeIntervalSince(session.start as Date)
+                }
+            }
         }
+        cell.tagLabel.text = tags
+        cell.sessionLabel.text = String(Int(value / 60))
         return cell
     }
     

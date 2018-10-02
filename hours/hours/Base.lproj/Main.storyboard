@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,12 +48,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmt-uD-mp6" customClass="TagView" customModule="hours" customModuleProvider="target">
+                                                    <rect key="frame" x="135.5" y="11" width="104" height="46"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="bmt-uD-mp6" secondAttribute="height" multiplier="52:23" id="maS-Uf-UVb"/>
+                                                        <constraint firstAttribute="width" constant="104" id="xDO-im-SK5"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="EAY-4y-pUk" secondAttribute="trailing" constant="15" id="0uq-N7-0wP"/>
                                                 <constraint firstItem="L0o-Wu-0th" firstAttribute="top" secondItem="6Z0-I8-oon" secondAttribute="bottom" constant="-8" id="9Qb-xV-dnS"/>
                                                 <constraint firstItem="EAY-4y-pUk" firstAttribute="centerY" secondItem="czS-sR-uQT" secondAttribute="centerY" id="ThM-E3-IM9"/>
+                                                <constraint firstItem="bmt-uD-mp6" firstAttribute="centerY" secondItem="czS-sR-uQT" secondAttribute="centerY" id="cPe-oe-Xs9"/>
                                                 <constraint firstItem="6Z0-I8-oon" firstAttribute="centerY" secondItem="czS-sR-uQT" secondAttribute="centerY" id="h7X-UZ-SOx"/>
+                                                <constraint firstItem="bmt-uD-mp6" firstAttribute="centerX" secondItem="czS-sR-uQT" secondAttribute="centerX" id="idG-z9-d7N"/>
                                                 <constraint firstItem="6Z0-I8-oon" firstAttribute="leading" secondItem="czS-sR-uQT" secondAttribute="leading" constant="15" id="oGi-7c-Ugv"/>
                                                 <constraint firstItem="L0o-Wu-0th" firstAttribute="leading" secondItem="6Z0-I8-oon" secondAttribute="trailing" constant="8" id="vVo-qG-qZD"/>
                                             </constraints>

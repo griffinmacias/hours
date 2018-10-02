@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagView" customModule="hours" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-2g-Mix">
+                    <rect key="frame" x="0.0" y="0.0" width="93" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-M6-t3I">
+                    <rect key="frame" x="-0.5" y="0.5" width="93" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CCd-2g-Mix" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6TK-0b-0iX"/>
+                <constraint firstItem="RX6-M6-t3I" firstAttribute="height" secondItem="CCd-2g-Mix" secondAttribute="height" id="D8e-xu-ZR0"/>
+                <constraint firstItem="RX6-M6-t3I" firstAttribute="centerX" secondItem="CCd-2g-Mix" secondAttribute="centerX" id="DMA-M4-DVy"/>
+                <constraint firstItem="CCd-2g-Mix" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ek8-ty-aJY"/>
+                <constraint firstItem="RX6-M6-t3I" firstAttribute="width" secondItem="CCd-2g-Mix" secondAttribute="width" id="H0K-3T-Gq1"/>
+                <constraint firstItem="CCd-2g-Mix" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Ksy-1M-Xac"/>
+                <constraint firstItem="CCd-2g-Mix" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="NUc-t7-e3P"/>
+                <constraint firstItem="RX6-M6-t3I" firstAttribute="centerY" secondItem="CCd-2g-Mix" secondAttribute="centerY" id="d0f-X2-zEo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="CCd-2g-Mix" id="lap-cP-Zkh"/>
+                <outlet property="nameLabel" destination="RX6-M6-t3I" id="TJy-oR-Ocu"/>
+            </connections>
+            <point key="canvasLocation" x="-37.5" y="84"/>
+        </view>
+    </objects>
+</document>
