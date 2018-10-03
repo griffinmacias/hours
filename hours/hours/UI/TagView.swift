@@ -10,18 +10,51 @@ import UIKit
 
 class TagView: UIView {
     
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.clipsToBounds = true
+        commonInit()
+    }
+    
+    func configureTags(_ tags: [TagViewModel]) {
+        //implement
+    }
+    
+    func configureTag(_ tag: String) {
+        nameLabel.text = tag
+        nameLabel.sizeToFit()
+        translatesAutoresizingMaskIntoConstraints = false
+        let padding: CGFloat = 8.0
+        let width = nameLabel.intrinsicContentSize.width
+        self.widthAnchor.constraint(equalToConstant: width + padding).isActive = true
+        self.heightAnchor.constraint(equalToConstant: nameLabel.intrinsicContentSize.height + padding).isActive = true
+        layer.cornerRadius = width / 5
+    }
+    
+    func commonInit() {
+        //nib load
+        Bundle.main.loadNibNamed(String(describing: TagView.self), owner: self, options: nil)
         
-//        containerView.translatesAutoresizingMaskIntoConstraints = false
-//        containerView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-//        containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-//        containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-//        containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        //view setup
+        clipsToBounds = true
+        contentView.frame = bounds
+        contentView.backgroundColor = UIColor.clear
+        addSubview(contentView)
+        
+        //constraints
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        contentView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        
     }
     
 }

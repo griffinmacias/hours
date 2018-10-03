@@ -81,7 +81,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         var value = 0.0
         if let session = activity.sessions?.firstObject as? Session {
             value += session.end.timeIntervalSince(session.start as Date)
-//            cell.sessionLabel.text = "\(session.start) - \(session.end)"
         }
         var tags = ""
         if let relatedActivities = activity.relatedActivities {
@@ -93,9 +92,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 }
             }
         }
-        cell.tagLabel.text = tags
-        cell.sessionLabel.text = String(Int(value / 60))
+        //configure
+        let tagView = TagView(frame: .zero)
+        tagView.backgroundColor = UIColor.green
+        tagView.configureTag("tagdfsdkjfk")
+        
+        cell.tagsStackView.addArrangedSubview(tagView)
+        
+        tagView.layer.cornerRadius = 10.0
+        
+        cell.timeLabel.text = String(Int(value / 60))
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75.0
     }
     
 }

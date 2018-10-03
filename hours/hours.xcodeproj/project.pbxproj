@@ -20,6 +20,7 @@
 		DB12852C2143F52100B902DF /* hoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB12852B2143F52100B902DF /* hoursTests.swift */; };
 		DB1285372143F52100B902DF /* hoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1285362143F52100B902DF /* hoursUITests.swift */; };
 		DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */; };
+		DB408A5F2165871C00BC5CCF /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB408A5E2165871C00BC5CCF /* ViewModels.swift */; };
 		DBB4B7112145623D00EAE809 /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B7102145623D00EAE809 /* unitTests.swift */; };
 		DBEFD4582164220B00F00038 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4542164220B00F00038 /* Session+CoreDataClass.swift */; };
 		DBEFD4592164220B00F00038 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFD4552164220B00F00038 /* Session+CoreDataProperties.swift */; };
@@ -72,6 +73,7 @@
 		DB1285362143F52100B902DF /* hoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoursUITests.swift; sourceTree = "<group>"; };
 		DB1285382143F52100B902DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		DB408A5E2165871C00BC5CCF /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		DBB4B7102145623D00EAE809 /* unitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTests.swift; sourceTree = "<group>"; };
 		DBEFD4542164220B00F00038 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataClass.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Session+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		DBEFD4552164220B00F00038 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "/Users/masonmacias/Development/Projects/hours/hours/hours/Core Data/Session+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2EA9782156D8CD00A16AF1 /* ActivityTableViewCell.swift */,
+				DB408A5E2165871C00BC5CCF /* ViewModels.swift */,
 				DBEFD45E2164291600F00038 /* TagView.swift */,
 				DBEFD45C2164288A00F00038 /* TagView.xib */,
 			);
@@ -431,6 +434,7 @@
 				DBEFD4582164220B00F00038 /* Session+CoreDataClass.swift in Sources */,
 				DB100F902147F583008018EF /* CoreDataManager.swift in Sources */,
 				DB1285142143F51F00B902DF /* AppDelegate.swift in Sources */,
+				DB408A5F2165871C00BC5CCF /* ViewModels.swift in Sources */,
 				DB2EA9792156D8CD00A16AF1 /* ActivityTableViewCell.swift in Sources */,
 				DBEFD4592164220B00F00038 /* Session+CoreDataProperties.swift in Sources */,
 				DBEFD45B2164220B00F00038 /* Activity+CoreDataProperties.swift in Sources */,

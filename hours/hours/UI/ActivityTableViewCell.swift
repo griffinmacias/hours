@@ -10,8 +10,8 @@ import UIKit
 
 class ActivityTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var tagLabel: UILabel!
-    @IBOutlet weak var sessionLabel: UILabel!
+    @IBOutlet weak var tagsStackView: UIStackView!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
